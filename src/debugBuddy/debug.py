@@ -6,6 +6,7 @@ import random
 #Jimena's Rubber Ducky Method 
 def ask_for_input(question, style="encouraging"):
     #question is a string
+        #diff styles 
         #encouraging
         #sarcastic
         #philosophical
@@ -14,6 +15,7 @@ def ask_for_input(question, style="encouraging"):
         "Let's break this down step by step. Make sure to check all areas of your code.",
         "You're close! Walk through your logic. Where does it start behaving unexpectedly?",
         "Think about the inputs. Could any unexpected values be sneaking in?",
+        "You got it, just try again!",
         "If you had to explain this to a complete beginner, how would you phrase it?",
     ]
 
