@@ -65,8 +65,6 @@ def ask_for_input(question, style="encouraging"):
 
 # Example question -> print(ask_for_input("Why isn't my loop breaking?", "sarcastic"))
 
-<<<<<<< HEAD
-=======
 # jake's debug hint method
 def debug_hint(issue_type="general", experience_level="intermediate"):
     
@@ -199,4 +197,3 @@ def debug_hint(issue_type="general", experience_level="intermediate"):
     }
     # return a random hint from the dict
     return random.choice(hints[issue_type][experience_level])
->>>>>>> j
