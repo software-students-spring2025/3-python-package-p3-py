@@ -17,7 +17,7 @@ readme = "README.md"
 keywords = ['python','package','debugging']
 requires-python = ">=3.7"
 classifiers = [
-    "Programming Language :: 3",
+    "Programming Language :: Python :: 3",
     "Intended Audience :: Fun",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: OS Independent",
