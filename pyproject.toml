@@ -8,9 +8,8 @@ description = "A python package that gives you general tips and encouragement wh
 version = "0.0.0"
 authors = [
     {name="Samir Hussain", email="sh6888@nyu.edu"},
-    {name="Jake Chang", email="jc11229@nyu.edu"},
-    {name="", email=""},
-    {name="", email=""}
+    {name = "Jake Chang", email = "jc11229@nyu.edu"}
+    # Add other authors when you have their information
 ]
 license = {file = "LICENSE"}
 readme = "README.md"
@@ -18,7 +17,6 @@ keywords = ['python','package','debugging']
 requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "Intended Audience :: Fun",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: OS Independent",
 ]
