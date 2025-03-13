@@ -65,7 +65,6 @@ def ask_for_input(question, style="encouraging"):
 
 # Example question -> print(ask_for_input("Why isn't my loop breaking?", "sarcastic"))
 
-
 # jake's debug hint method
 def debug_hint(issue_type="general", experience_level="intermediate"):
     
