@@ -64,7 +64,10 @@ def ask_for_input(question, style="encouraging"):
     return random.choice(responseOptions[style])
 
 # Example question -> print(ask_for_input("Why isn't my loop breaking?", "sarcastic"))
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 def debug_hint(issue_type="general", experience_level="intermediate"):
     
     # valid parameter inputs if different from default
@@ -194,5 +197,5 @@ def debug_hint(issue_type="general", experience_level="intermediate"):
             ]
         }
     }
-    # return a random hint
+    # return a random hint from the dict
     return random.choice(hints[issue_type][experience_level])
