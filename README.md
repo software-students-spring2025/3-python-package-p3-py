@@ -28,14 +28,68 @@ import debugBuddy.debug as debug
 ```
 ## Functions
 ### Function 1
+#### motivate(name)
+* Provides a random motivational message to keep you going through difficult debugging sessions.
+
+#### Parameters:
+* name (str): Your name, which will be included in the personalized message
+
+#### Returns:
+* A string containing a randomly selected motivational message
+
+```python
+import debugBuddy.debug as debug
+
+# get a motivational message
+message = debug.motivate("Alex")
+print(message)
+# output might be: "Your code might be broken, Alex, but you're not! Keep going!"
+```
 
 ### Function 2
+#### ask_for_input(question, style="encouraging")
+* Simulates a rubber duck debugging conversation, responding to your questions in different conversational styles.
+
+#### Parameters:
+
+* question (str): Your debugging question or issue
+* style (str, optional): The response style. 
+* Options:
+* "encouraging": Positive and supportive responses
+* "sarcastic": Humorous, sarcastic responses
+* "philosophical": Deep, philosophical perspectives on debugging
+* Default is "encouraging"
+
+#### Returns:
+* A string containing a response to your question in the specified style
+
+#### Raises:
+* ValueError: If an invalid style is provided
+
+```python
+import debugBuddy.debug as debug
+
+# get an encouraging response
+response = debug.ask_for_input("Why isn't my loop breaking?")
+print(response)
+# output might be: "You're close! Walk through your logic. Where does it start behaving unexpectedly?"
+
+# get a sarcastic response
+sarcastic = debug.ask_for_input("Why isn't my loop breaking?", "sarcastic")
+print(sarcastic)
+# output might be: "Maybe your loop just really likes running. Have you checked the condition?"
+
+# get a philosophical response
+philosophical = debug.ask_for_input("Why isn't my loop breaking?", "philosophical")
+print(philosophical)
+# output might be: "Maybe the loop is working as expected, and it's your expectations that are wrong."
+```
 
 ### Function 3
 #### debug_hint(issue_type="general", experience_level="intermediate")
 * Provides specific debugging tips and strategies based on the type of issue you're facing and your experience level.
 
-##### Parameters:
+#### Parameters:
 issue_type (str, optional): Type of debugging issue you're facing. Options:
 * "general": General debugging advice
 * "syntax": Help with syntax errors
