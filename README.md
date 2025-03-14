@@ -53,6 +53,7 @@ print(message)
 #### Parameters:
 
 * question (str): Your debugging question or issue
+
 * style (str, optional): The response style. 
 * Options:
 * "encouraging": Positive and supportive responses
@@ -90,14 +91,17 @@ print(philosophical)
 * Provides specific debugging tips and strategies based on the type of issue you're facing and your experience level.
 
 #### Parameters:
-issue_type (str, optional): Type of debugging issue you're facing. Options:
+issue_type (str, optional): Type of debugging issue you're facing. 
+* Options:
 * "general": General debugging advice
 * "syntax": Help with syntax errors
 * "logic": Help with logical errors
 * "runtime": Help with runtime errors
 * "performance": Help with performance issues
 * Default is "general"
-experience_level (str, optional): Your programming experience level. Options:
+
+* experience_level (str, optional): Your programming experience level. 
+* Options:
 * "beginner": For new programmers
 * "intermediate": For programmers with some experience
 * "advanced": For experienced programmers
