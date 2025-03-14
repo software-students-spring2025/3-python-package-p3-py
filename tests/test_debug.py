@@ -32,4 +32,26 @@ class Tests:
         with pytest.raises(ValueError):
             debug.debug_hint("general", "nonexistent_level")
             
-    pass
+    
+    #Samir unit tests
+    def test_error_message_help_invalid_parameter(self):
+        with pytest.raises(ValueError):
+            debug.error_message_help("NoError")
+
+    def test_error_message_help_valid_parameter(self):
+        ret = debug.error_message_help("ValueError")
+        assert isinstance(ret,str)
+        assert len(ret) > 0
+
+    def test_error_message_help_default_parameter(self):
+        ret = debug.error_message_help()
+        assert isinstance(ret,str)
+        assert len(ret) > 0
+
+    def test_error_message_help_all_parameters(self):
+        errors = ['FileNotFoundError', 'ImportError', 'IndentationError', 'ValueError', 'AttributeError', 
+                    'KeyError', 'IndexError', 'TypeError', 'NameError', 'SyntaxError']
+        for error in error:
+            ret = debug.error_message_help(error)
+            assert isinstance(ret,str)
+            assert len(ret) > 0
