@@ -13,7 +13,7 @@ Unlike traditional debugging tools that focus solely on fixing technical issues,
 
 ## Team
 * [Jake Chang](https://github.com/jakechang1284)
-* []
+* [Samir Hussain](https://github.com/Samir2324)
 * []
 * []
 
@@ -133,5 +133,44 @@ print(advanced_hint)
 ```
 
 ### Function 4
+#### error_message_help(error = 'TypeError')
+* Provides tips or suggestions based on the specific error type you are dealing with.
 
+#### Parameter:
+error (str, optional): Error you are facing
+* Options:
+* 'FileNotFoundError'
+* 'ImportError'
+* 'IndentationError'
+* 'ValueError'
+* 'AttributeError'
+* 'KeyError'
+* 'IndexError'
+* 'NameError'
+* 'SyntaxError'
+* 'TypeError': default
+
+### Returns:
+* A string containing a suggestion on how to resolve the specific error
+
+### Raises:
+* ValueError: If an invalid error is passed in
+
+```python
+import debugBuddy.debug as debug
+
+# get a hint for Type Errors
+type_hint = debug.error_message_help()
+print(type_hint)
+# output may be: You're so close! Try using int(), str(), or float() to match the data types!
+
+# get a hint for Syntax Errors
+syntax_hint = debug.error_message_help('SyntaxError')
+print(syntax_hint)
+# output may be: You're almost there! A missing colon, parenthesis, or quote might be the issue.
+
+# get a hint for Value Errors
+value_hint = debug.error_message_help('ValueError')
+print(value_hint)
+# output may be: Great work! Just check if the value is within the expected range before using it.
 An exercise to create a Python package, build it, test it, distribute it, and use it. See [instructions](./instructions.md) for details.
