@@ -173,4 +173,5 @@ print(syntax_hint)
 value_hint = debug.error_message_help('ValueError')
 print(value_hint)
 # output may be: Great work! Just check if the value is within the expected range before using it.
+```
 An exercise to create a Python package, build it, test it, distribute it, and use it. See [instructions](./instructions.md) for details.
