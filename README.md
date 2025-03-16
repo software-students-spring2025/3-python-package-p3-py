@@ -14,8 +14,8 @@ Unlike traditional debugging tools that focus solely on fixing technical issues,
 ## Team
 * [Jake Chang](https://github.com/jakechang1284)
 * [Samir Hussain](https://github.com/Samir2324)
-* []
-* []
+* [Jimena Menendez](https://github.com/jkm8294)
+* [Sarah Wang](https://github.com/sarahswang)
 
 ## Installation
 [Link to PyPl]()
