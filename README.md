@@ -12,7 +12,8 @@ debugBuddy is your emotional support companion when debugging code. We all know 
 Unlike traditional debugging tools that focus solely on fixing technical issues, debugBuddy addresses the emotional and psychological aspects of debugging, helping you maintain sanity and motivation throughout the process.
 
 ## Workflow 
-![Workflow](https://github.com/software-students-spring2025/3-python-package-p3-py/blob/main/.github/workflows/event-logger.yml/badge.svg)
+![Workflow]
+(https://github.com/software-students-spring2025/3-python-package-p3-py/actions/workflows/event-logger.yml/badge.svg)
 
 ## Team
 * [Jake Chang](https://github.com/jakechang1284)
