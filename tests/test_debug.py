@@ -57,6 +57,7 @@ class Tests:
             assert len(ret) > 0
     
     #Jimenas test units
+    #should i make my tests simpler?? 
     def test_ask_for_input_encouraging(self):
         result = debug.ask_for_input("Why isn't my loop breaking?", "encouraging")
         assert isinstance(result, str)
