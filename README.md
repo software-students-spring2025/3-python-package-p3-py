@@ -1,4 +1,4 @@
-![Workflow](https://github.com/software-students-spring2025/3-python-package-p3-py/actions/workflows/event-logger.yml/badge.svg)
+![Workflow](https://github.com/software-students-spring2025/3-python-package-p3-py/actions/workflows/python-package.yml/badge.svg)
 # Python Package Exercise
 # debugBuddy
 
