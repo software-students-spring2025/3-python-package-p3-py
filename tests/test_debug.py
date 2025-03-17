@@ -114,3 +114,25 @@ class Tests:
             "You got it, just try again!",
             "If you had to explain this to a complete beginner, how would you phrase it?",
         ]
+
+    # Sarah's tests for motivate(name)
+
+    def test_motivate_returns_string(self):
+        result = debug.motivate("Alice")
+        assert isinstance(result, str)
+
+    def test_motivate_contains_name(self):
+        name = "Charlie"
+        result = debug.motivate(name)
+        assert name in result
+
+    def test_motivate_handles_weird_names(self):
+        weird_names = ["X Æ A-12", "Von Halle", "O'Reilly", " "]
+        for weird_name in weird_names:
+            result = debug.motivate(weird_name)
+            assert weird_name in result
+
+    def test_motivate_randomness(self):
+        name = "Sarah"
+        results = {debug.motivate(name) for _ in range(10)}
+        assert len(results) > 1
