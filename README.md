@@ -12,6 +12,9 @@ debugBuddy is your emotional support companion when debugging code. We all know 
 
 Unlike traditional debugging tools that focus solely on fixing technical issues, debugBuddy addresses the emotional and psychological aspects of debugging, helping you maintain sanity and motivation throughout the process.
 
+## PyPI Link
+[debugBuddy on PyPl]()
+
 ## Team
 * [Jake Chang](https://github.com/jakechang1284)
 * [Samir Hussain](https://github.com/Samir2324)
@@ -19,11 +22,11 @@ Unlike traditional debugging tools that focus solely on fixing technical issues,
 * [Sarah Wang](https://github.com/sarahswang)
 
 ## Installation
-[Link to PyPl]()
-
+You can install debugBuddy directly from PyPI using the following command:
 ```bash
 pip install debugBuddy
 ```
+Then include this import statement to use debugBuddy in your own code:
 ```python
 import debugBuddy.debug as debug
 ```
@@ -176,3 +179,15 @@ print(value_hint)
 # output may be: Great work! Just check if the value is within the expected range before using it.
 ```
 An exercise to create a Python package, build it, test it, distribute it, and use it. See [instructions](./instructions.md) for details.
+
+## Contributions
+If you would like to contribute to this package, please follow the steps below.
+#### Clone the repository
+``` bash
+git clone https://github.com/software-students-spring2025/3-python-package-p3-py.git
+cd 3-python-package-p3-py
+```
+#### Create a new branch
+``` bash
+git checkout -b <branch-name>
+```
