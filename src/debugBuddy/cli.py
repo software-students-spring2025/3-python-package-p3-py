@@ -14,3 +14,4 @@ def error_message_help_cli():
         print("Syntax: error_message_help <ErrorType>")
         sys.exit(1)
     print(error_message_help(sys.argv[1]))
+
