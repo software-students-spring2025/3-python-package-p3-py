@@ -13,10 +13,12 @@ authors = [
     {name = "Sarah Wang", email = "ssw8645@nyu.edu"}
     # Add other authors when you have their information
 ]
+
 license = {file = "LICENSE"}
 readme = "README.md"
 keywords = ['python','package','debugging']
 requires-python = ">=3.7"
+
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
@@ -31,5 +33,10 @@ dev = ["pytest"]
 "Repository" = "https://github.com/software-students-spring2025/3-python-package-p3-py.git"
 "Bug Tracker" = "https://github.com/software-students-spring2025/3-python-package-p3-py/issues"
 
+[tool.setuptools]
+packages = ["debugBuddy"]
+package-dir = {"" = "src"} 
+
 [project.scripts]
 debugBuddy = "debugBuddy.__main__:main"
+motivate = "debugBuddy.cli:motivate_cli"
