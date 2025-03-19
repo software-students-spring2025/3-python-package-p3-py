@@ -41,3 +41,5 @@ package-dir = {"" = "src"}
 debugBuddy = "debugBuddy.__main__:main"
 motivate = "debugBuddy.cli:motivate_cli"
 rubberDucky = "debugBuddy.cli:ask_for_input_cli" 
+debug_hint = "debugBuddy.cli:debug_hint_cli"
+
