@@ -40,3 +40,4 @@ package-dir = {"" = "src"}
 [project.scripts]
 debugBuddy = "debugBuddy.__main__:main"
 motivate = "debugBuddy.cli:motivate_cli"
+rubberDucky = "debugBuddy.cli:ask_for_input_cli" 
