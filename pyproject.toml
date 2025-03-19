@@ -40,3 +40,4 @@ package-dir = {"" = "src"}
 [project.scripts]
 debugBuddy = "debugBuddy.__main__:main"
 motivate = "debugBuddy.cli:motivate_cli"
+debug_hint = "debugBuddy.cli:debug_hint_cli"
