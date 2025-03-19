@@ -10,10 +10,25 @@ def motivate_cli():
     print(motivate(name))
 
 def error_message_help_cli():
-    if len(sys.argv) != 2:
+    if len(sys.argv) == 1:
+        #default input
+        try:
+            print(error_message_help())
+        except ValueError as e:
+            print(f"Error: {e}")
+            sys.exit(1)
+    elif len(sys.argv) == 2:
+        #given argument
+        try:
+            print(error_message_help(sys.argv[1]))
+        except ValueError as e:
+            print(f"Error: {e}")
+            print("Valid errors are: FileNotFoundError, ImportError, IndentationError, ValueError, AttributeError, KeyError, IndexError, TypeError, NameError, SyntaxError")
+            sys.exit(1)
+    else:
         print("Syntax: error_message_help <ErrorType>")
+        print("Valid errors are: FileNotFoundError, ImportError, IndentationError, ValueError, AttributeError, KeyError, IndexError, TypeError, NameError, SyntaxError")
         sys.exit(1)
-    print(error_message_help(sys.argv[1]))
 
 def ask_for_input_cli(): #jime
     if len(sys.argv) < 3:  #question and style exist 

@@ -11,7 +11,6 @@ authors = [
     {name = "Jake Chang", email = "jc11229@nyu.edu"},
     {name = "Jimena Menendez", email = "jkm8294@nyu.edu"},
     {name = "Sarah Wang", email = "ssw8645@nyu.edu"}
-    # Add other authors when you have their information
 ]
 
 license = {file = "LICENSE"}
@@ -42,4 +41,5 @@ debugBuddy = "debugBuddy.__main__:main"
 motivate = "debugBuddy.cli:motivate_cli"
 rubberDucky = "debugBuddy.cli:ask_for_input_cli" 
 debug_hint = "debugBuddy.cli:debug_hint_cli"
+error_message_help = "debugBuddy.cli:error_message_help_cli"
 
