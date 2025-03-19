@@ -1,4 +1,4 @@
-import pytest # type: ignore
+import pytest 
 from debugBuddy import debug
 
 class Tests:

@@ -206,7 +206,11 @@ def error_message_help(error = 'TypeError'):
                     'KeyError', 'IndexError', 'TypeError', 'NameError', 'SyntaxError']
     
     #checking for valid input
-    if error not in valid_errors:
+    #support for cases: value error, value_error, and ValueError
+    temp = error.replace("_"," ").title().split()
+    formatted_error = "".join(temp)
+
+    if formatted_error not in valid_errors:
         raise ValueError(f"This error is not supported, please choose from this list of errors: {valid_errors}")
 
     #dict of supportive messages based on error type
@@ -284,4 +288,4 @@ def error_message_help(error = 'TypeError'):
     }
 
     #returning a random message based on 
-    return random.choice(supportive_messages[error])
+    return random.choice(supportive_messages[formatted_error])
