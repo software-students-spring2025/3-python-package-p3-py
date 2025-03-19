@@ -205,14 +205,15 @@ def error_message_help(error = 'TypeError'):
     valid_errors = ['FileNotFoundError', 'ImportError', 'IndentationError', 'ValueError', 'AttributeError', 
                     'KeyError', 'IndexError', 'TypeError', 'NameError', 'SyntaxError']
     
-    #checking for valid input
-    #support for cases: value error, value_error, and ValueError
-    temp = error.replace("_"," ").title().split()
-    formatted_error = "".join(temp)
+    
 
-    if formatted_error not in valid_errors:
-        raise ValueError(f"This error is not supported, please choose from this list of errors: {valid_errors}")
-
+    if error not in valid_errors:
+        temp = error.replace("_"," ").title().split()
+        formatted_error = "".join(temp)#support for cases: value error, value_error
+        if formatted_error not in valid_errors:#if format is different
+            raise ValueError(f"This error is not supported, please choose from this list of errors: {valid_errors}")
+        
+    formatted_error = error
     #dict of supportive messages based on error type
     supportive_messages = {
     "FileNotFoundError": [

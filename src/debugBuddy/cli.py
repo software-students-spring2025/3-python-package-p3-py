@@ -20,9 +20,7 @@ def error_message_help_cli():
     elif len(sys.argv) == 2:
         #given argument
         try:
-            temp = sys.argv[1].replace("_"," ").title().split()
-            arg = "".join(temp)#works with cases such as value error, value_error, and ValueError
-            print(error_message_help(arg))
+            print(error_message_help(sys.argv[1]))
         except ValueError as e:
             print(f"Error: {e}")
             print("Valid errors are: FileNotFoundError, ImportError, IndentationError, ValueError, AttributeError, KeyError, IndexError, TypeError, NameError, SyntaxError")
