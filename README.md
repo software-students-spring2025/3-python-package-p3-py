@@ -21,15 +21,32 @@ Unlike traditional debugging tools that focus solely on fixing technical issues,
 * [Jimena Menendez](https://github.com/jkm8294)
 * [Sarah Wang](https://github.com/sarahswang)
 
-## Installation
-You can install debugBuddy directly from PyPI using the following command:
+## How to Install and use this Package
+1. Install pipenv (if not already installed):
+```bash 
+    pip install pipenv
+``` 
+2. Install the Package: 
 ```bash
 pip install debugBuddy
 ```
-Then include this import statement to use debugBuddy in your own code:
+3. Activate the Virtual Environment: 
+```bash 
+pipenv shell
+```
+4. Create a Python program file to import and use the package:
 ```python
 import debugBuddy.debug as debug
 ```
+5. Run the Program:
+```bash
+python your_program_name.py
+```
+6. Exit the virtual environment: 
+```bash 
+Exit
+```
+
 ## Functions
 ### Function 1
 #### motivate(name)
@@ -191,3 +208,5 @@ cd 3-python-package-p3-py
 ``` bash
 git checkout -b <branch-name>
 ```
+## Command Line 
+You can also use debugBuddy on the command line if you want to quickly use the functions for debugging help. Example, to use the motivate function you can call: debugBuddy motivate name which will print out a motivational message with the name inputed.
