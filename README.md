@@ -13,7 +13,7 @@ debugBuddy is your emotional support companion when debugging code. We all know 
 Unlike traditional debugging tools that focus solely on fixing technical issues, debugBuddy addresses the emotional and psychological aspects of debugging, helping you maintain sanity and motivation throughout the process.
 
 ## PyPI Link
-[debugBuddy on PyPl]()
+[debugBuddy](https://pypi.org/project/debugBuddy/0.0.0/)
 
 ## Team
 * [Jake Chang](https://github.com/jakechang1284)
