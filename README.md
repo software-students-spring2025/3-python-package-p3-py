@@ -24,7 +24,7 @@ Unlike traditional debugging tools that focus solely on fixing technical issues,
 ## How to Install and use this Package
 1. Install pipenv (if not already installed):
 ```bash 
-    pip install pipenv
+pip install pipenv
 ``` 
 2. Install the Package: 
 ```bash
@@ -208,5 +208,37 @@ cd 3-python-package-p3-py
 ``` bash
 git checkout -b <branch-name>
 ```
+#### How to Run Unit Tests
+We've included at least 4 unit tests for each function in the debugBuddy package. To run these tests: 
+1. Install pytest in the virtual environment:
+```bash 
+pipenv install pytest
+```
+2. Naviagate to the main project directory: 
+```bash 
+cd path/to/your/project
+```
+3. Run Pytest for all tests 
+```bash 
+pytest test_debugBuddy.py
+```
+4. (Optional) Run all tests with detailed output: 
+```bash 
+pytest -v test_debugBuddy.py
+```
+5. (Optional)If you want to run a single test inside test_debugBuddy.py, for example, test_ask_for_input_encouraging, use: 
+```bash 
+pytest test_debugBuddy.py -k "test_ask_for_input_encouraging"
+```
+
 ## Command Line 
-You can also use debugBuddy on the command line if you want to quickly use the functions for debugging help. Example, to use the motivate function you can call: debugBuddy motivate name which will print out a motivational message with the name inputed.
+You can also use debugBuddy on the command line if you want to quickly use the functions for debugging help. Example, to use the motivate function you can call the following which will print out a motivational message with the name inputed. 
+```bash 
+debugBuddy motivate name 
+#Output may be: One bug at a time, name
+```
+Another example is to use the error message function you can similarly type in the command line:
+```bash 
+debugBuddy error_message_help FileNotFoundError
+#Output may be: No worries! Double-check the file path and ensure it exists—it’s an easy fix!
+```
